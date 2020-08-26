@@ -14,7 +14,7 @@ This workshop introduces tools and techniques to make a data science project eff
 
 ## Prerequisites 
 
-Basic familiarity with R required. 
+Basic familiarity with R, Bash, and Git/GitHub required. 
 
 ## Setup 
 

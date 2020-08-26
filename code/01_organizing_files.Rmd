@@ -5,13 +5,17 @@ date: "8/26/2020"
 output: html_document
 ---
 
-# Organizing files 
+# Motivation 
+
+Why making a project efficient and reproducible matters?
+
+For your self-interest and public goods. 
 
 ![](https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R/blob/master/misc/screenshot.png?raw=true)
 
-# (Optional) Project-oriented workflow
+# Organizing files 
 
-Read Jenny Bryan's great article on [project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/). The key idea is [computatinoal reproduciblity](http://web.stanford.edu/~vcs/talks/Utah2018-STODDEN.pdf). To ensure that, we need to make a project self-contained.
+![](https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R/blob/master/misc/rstats.png?raw=true)
 
 - Note that `setwd()` is not reproducible outside the author's local machine. Instead, learn to use `here()`'.
 
@@ -62,7 +66,9 @@ dir.create(here::here("project", "outputs"))
 dir.create(here::here("project", "functions"))
 ```
 
-5. Version control [using Git from RStudio](https://swcarpentry.github.io/git-novice/14-supplemental-rstudio/)
+# (Optional) Project-oriented workflow
+
+Read Jenny Bryan's great article on [project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/). The key idea is [computatinoal reproduciblity](http://web.stanford.edu/~vcs/talks/Utah2018-STODDEN.pdf). To ensure that, we need to make a project self-contained.
 
 # Organizing code
 
