@@ -5,11 +5,101 @@ date: "8/26/2020"
 output: html_document
 ---
 
+# Setup
+
+
+```{r}
+
+pacman::p_load(
+  tidyverse, # tidyverse 
+  here # computational reproducibility 
+  )
+
+```
+
 ![](https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R/blob/master/misc/rstats.png?raw=true)
 
 - Note that `setwd()` is not reproducible outside the author's local machine. Instead, learn to use `here()`'.
+
+- `rm(list = ls())` does not completely remove everything in your environment (e.g., packages).
+
+# Making a project computationally reproducible and self-contained 
+
+- Read Jenny Bryan's wonderful piece on [project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/).
+
+- Key idea: separate workflow (e.g., workspace information) from products (code and data)
+
+## `here`: alternative to `setwd()`
+
+- Example 
+
+```{r}
+
+# Old: You won't be able to run this code 
+
+ggplot(mtcars, aes(x = mpg, y = wt)) +
+  geom_point()
+
+ggsave("/home/jae/efficient-reproducible-project-management-in-R/project/outputs/example.png")
+
+```
+
+```{r}
+
+# New: Reproducible 
+
+ggplot(mtcars, aes(x = mpg, y = wt)) +
+  geom_point()
+
+ggsave(here("project", "outputs", "example.png"))
+
+```
+- How it works 
+
+`here()` function shows what's the top-level project directory. 
+
+```{r}
+here::here()
+```
+- Build a path including subdirectories 
+
+```{r}
+here("project", "outputs")
+```
+- How `here` defines the top-level project directory. The following list came from [the here package repository](https://github.com/jennybc/here_here)).
+
+   - Note that we already defined an RStudio Project! 
+- Is a file named .here present?
+- Is this **an RStudio Project**? Literally, can I find a file named something like foo.Rproj?
+- Is this an R package? Does it have a DESCRIPTION file?
+- Is this a remake project? Does it have a file named remake.yml?
+- Is this a projectile project? Does it have a file named .projectile?
+- Is this a checkout from a version control system? Does it have a directory named .git or .svn? Currently, only Git and Subversion are supported.
+
+- If there's no match then use `set_here()` to create an empty `.here` file. 
 
 **Challenge 1**
 
 1. Can you define computational reproducibility? 
 2. Can you explain why sharing code and data is not enough for computational reproducibility? 
+
+# Making a project usef-friendly
+
+- README.md 
+
+![](https://libapps.s3.amazonaws.com/accounts/125446/images/README_Sample.png)
+
+- In this simple markdown file, note some basic information about the project including the structure of the directory.
+
+- Recommendations by the [Berkeley Research Data Management](https://guides.lib.berkeley.edu/c.php?g=652220&p=4575532) team. 
+
+- The README file should include the followings:
+   - Description of the project and information about the funders and collaborators (if there is any).
+   - Goal statement of the project.
+   - The projected input.
+   - The expected output.
+   - Expected environmental computations.
+
+- This is how I used the README.md file for this workshop. Check out [my GitHub account](https://github.com/jaeyk) to see how I manage my projects.
+
+- Use [binder](https://mybinder.org/) if you want to capture environment. This is especially great if you want to use the code for teaching. 
