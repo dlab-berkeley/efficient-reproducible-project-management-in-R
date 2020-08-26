@@ -1,4 +1,5 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dlab-berkeley/efficient-reproducible-project-management-in-R/master?urlpath=rstudio)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/https%3A%2F%2Fmybinder.org%2Fv2%2Fgh%2Fdlab-berkeley%2Fefficient-reproducible-project-management-in-R/master?urlpath=rstudio)
 
 # Efficient and Reproducible Project Management in R
 
