@@ -1,2 +1,2 @@
-# efficient-reproducible-project-organization-in-R
-Efficient and Reproducible Project Organization in R
+# efficient-reproducible-project-management-in-R
+Efficient and Reproducible Project Management in R
