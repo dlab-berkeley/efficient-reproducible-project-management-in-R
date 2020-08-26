@@ -26,7 +26,7 @@ For your self-interest and public goods.
 
 # How to organize files in a project 
 
-Step 1. [Environment](https://environments.rstudio.com/) is part of your project. Don't share them across workspaces. If someone can't reproduce your environment, they are likely facing a problem running your code.
+Step 1. [**Environment**](https://environments.rstudio.com/) is part of your project. Don't share them across workspaces. If someone can't reproduce your environment, they are likely facing a problem running your code.
 
 - Tools > Global Options. You should not check Restor .RData ... and set saving workspace option to NEVER.
 
@@ -79,7 +79,7 @@ Create directories for a project named "starwars".
 
 # How to organize code in a R markdown file 
 
-- In addition to environment, workflow is an important component of project efficiency and reproducibility. 
+- In addition to environment, **workflow** is an important component of project efficiency and reproducibility. 
 
 ![](https://rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png)
 
