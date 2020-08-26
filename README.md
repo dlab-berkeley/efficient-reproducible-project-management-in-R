@@ -19,7 +19,7 @@ Basic familiarity with R required.
 
 ## Setup 
 
-Install the following three packages in R. 
+Launch the bider or manually install the following three packages in R. 
 
 ```r
 
