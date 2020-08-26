@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/v2/gh/dlab-berkeley/efficient-reproducible-project-management-in-R/master?urlpath=rstudio)
+
 # Efficient and Reproducible Project Management in R
 
 by [Jae Yeon Kim](https://jaeyk.github.io/)
