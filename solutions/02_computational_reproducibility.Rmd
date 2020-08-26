@@ -1,0 +1,16 @@
+---
+title: "Organizing files"
+author: "Jae Yeon Kim"
+date: "8/26/2020"
+output: html_document
+---
+
+**Challenge 1**
+
+1. 
+
+- Empirical reproducibility: can't reproduce research 
+- Statistical reproducibility (e.g., p-hacking)
+- Computational reproducibility: can someone else run your code without facing an error?
+
+See [these slides](http://web.stanford.edu/~vcs/talks/Utah2018-STODDEN.pdf) for more information.

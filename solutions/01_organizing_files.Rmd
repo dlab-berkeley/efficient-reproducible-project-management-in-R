@@ -1,0 +1,23 @@
+---
+title: "Organizing files and code"
+author: "Jae Yeon Kim"
+date: "8/26/2020"
+output: html_document
+---
+
+**Challenge 1**
+
+```{r}
+
+dir.create("starwars")
+
+dir.create(here("starwars", "data"))
+
+dir.create(here("starwars", "processed_data"))
+
+dir.create(here("starwars", "outputs"))
+
+dir.create(here("starwars", "functions"))
+           
+```
+

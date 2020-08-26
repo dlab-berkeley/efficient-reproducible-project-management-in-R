@@ -5,6 +5,17 @@ date: "8/26/2020"
 output: html_document
 ---
 
+# Setup
+
+```{r}
+
+pacman::p_load(
+  tidyverse, # tidyverse 
+  here # computational reproducibility 
+  )
+
+```
+
 # Motivation 
 
 Why making a project efficient and reproducible matters?
@@ -13,62 +24,95 @@ For your self-interest and public goods.
 
 ![](https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R/blob/master/misc/screenshot.png?raw=true)
 
-# Organizing files 
+# How to organize files in a project 
 
-![](https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R/blob/master/misc/rstats.png?raw=true)
+Step 1. [Environment](https://environments.rstudio.com/) is part of your project. Don't share them across workspaces. If someone can't reproduce your environment, they are likely facing a problem running your code.
 
-- Note that `setwd()` is not reproducible outside the author's local machine. Instead, learn to use `here()`'.
+- Tools > Global Options. You should not check Restor .RData ... and set saving workspace option to NEVER.
 
-- Do not save .RData when you quit R and don't load. Using [Bash](https://www.gnu.org/software/bash/), add the following line in `.bash_profile`: `alias R='R --no-save --no-restore-data'` (More information on [invoking R](https://colinfay.me/intro-to-r/appendix-b-invoking-r.html) by W. N. Venables and D. M. Smith (R Core Team))
-
-# (Required) Project organization
-
-Read [Software Carpentry](https://software-carpentry.org/lessons/index.html)'s article on [project management in RStudio](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/).
-
-*Tips for file organization*
-
-- See ["Good Enough Practices in Scientific Computing"](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf) by [PLOS](https://plos.org/)
-
-- You can create directories on your computer from R using `dir.create` function.
-
-0. Create a project directory 
+Step 2. For each project, create a project directory 
 
 ```{r}
-# Create a project directory 
-# .. subdirectory 
-# I assume that your current working directory is advanced-data-wrangling-in-R. Check this by running `getwd()`
+
+# Ideally don't name it a project. Use a name that's more informative.
 
 dir.create("../project")
 
 ```
+Step 3. File > New project > Browse existing directories > Create project This allows each project has its own workspace. 
 
-1. Treat raw data as read only (raw data should be RAW!)
+Step 4. Treat raw data as read only (raw data should be RAW!)
 
 ```{r}
+
 dir.create(here::here("project", "data"))
-```
 
-2. Separate read-only data from processed data
+```
+Step 5. Separate read-only data from processed data
 
 ```{r}
+
 dir.create(here::here("project", "processed_data"))
+
 ```
 
-3. Treat generated outputs as disposable
+Step 6. Treat generated outputs as disposable
 
 ```{r}
+
 dir.create(here::here("project", "outputs"))
+
 ```
 
-4. Separate function definition and application
+Step 7. Separate function definition and application
 
 ```{r}
+
 dir.create(here::here("project", "functions"))
+
+```
+**Challenge 1**
+Create directories for a project named "starwars". 
+
+*References**
+- See ["Good Enough Practices in Scientific Computing"](https://github.com/swcarpentry/good-enough-practices-in-scientific-computing/blob/gh-pages/good-enough-practices-for-scientific-computing.pdf) by [PLOS](https://plos.org/) and [Software Carpentry](https://software-carpentry.org/lessons/index.html)'s article on [project management in RStudio](https://swcarpentry.github.io/r-novice-gapminder/02-project-intro/)
+
+# How to organize code in a R markdown file 
+
+- In addition to environment, workflow is an important component of project efficiency and reproducibility. 
+
+![](https://rviews.rstudio.com/post/2017-06-09-What-is-the-tidyverse_files/tidyverse1.png)
+
+- R Markdown basic syntax 
+
+```{r}
+# Header 1 
+## Header 2 
+### Header 3 
 ```
 
-# (Optional) Project-oriented workflow
+- Use these section headings to indicate workflow.
 
-Read Jenny Bryan's great article on [project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/). The key idea is [computatinoal reproduciblity](http://web.stanford.edu/~vcs/talks/Utah2018-STODDEN.pdf). To ensure that, we need to make a project self-contained.
+```{r}
 
-# Organizing code
+# Import packages and data 
 
+# Tidy data 
+
+# Transform data 
+
+# Model data 
+
+# Visualize data 
+
+```
+
+- Press `ctrl + shift + o` you can see a document outline based on these headings. This is a nice feature for finding code you need to focus. 
+
+- If your project is large, then divide these sections into files and then number them. 
+
+   - 01_tidying.Rmd
+   - 02_transforming.Rmd 
+   ... 
+   
+- You can see that this workshop also follows this guideline. 

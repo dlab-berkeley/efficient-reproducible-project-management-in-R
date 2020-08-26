@@ -24,7 +24,6 @@ Basic familiarity with R, Bash, and Git/GitHub required.
 
 pacman::p_load(
   tidyverse, # tidyverse 
-  usethis, # workflow project management 
   here # computational reproducibility 
   )
 
