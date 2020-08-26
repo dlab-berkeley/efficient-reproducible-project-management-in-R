@@ -8,9 +8,9 @@ This workshop introduces tools and techniques to make a data science project eff
 
 ## Learning objectives 
 
-Part 1: Organizing files 
-Part 2: Making a project computationally reproducible 
-Part 3: Using Git and GitHub for version control and project management
+- Part 1: Organizing files 
+- Part 2: Making a project computationally reproducible 
+- Part 3: Using Git and GitHub for version control and project management
 
 ## Prerequisites 
 
@@ -33,8 +33,8 @@ pacman::p_load(
 2. Install Git and sign up GitHub (if you haven't) 
 
 - [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
- - Don't forget to do basic Git configurations. Here's a [step-by-step tutorial](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration). 
+   - Don't forget to do basic Git configurations. Here's a [step-by-step tutorial](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration). 
 - [Singing up for a new GitHub account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account)
- - Take advantage of [the GitHub Student Developer Pack](https://education.github.com/pack)
+   - Take advantage of [the GitHub Student Developer Pack](https://education.github.com/pack)
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
