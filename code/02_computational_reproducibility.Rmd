@@ -91,15 +91,6 @@ here("project", "outputs")
 
 - In this simple markdown file, note some basic information about the project including the structure of the directory.
 
-- Recommendations by the [Berkeley Research Data Management](https://guides.lib.berkeley.edu/c.php?g=652220&p=4575532) team. 
-
-- The README file should include the followings:
-   - Description of the project and information about the funders and collaborators (if there is any).
-   - Goal statement of the project.
-   - The projected input.
-   - The expected output.
-   - Expected environmental computations.
-
 - This is how I used the README.md file for this workshop. Check out [my GitHub account](https://github.com/jaeyk) to see how I manage my projects.
 
 - Use [binder](https://mybinder.org/) if you want to capture environment. This is especially great if you want to use the code for teaching. 

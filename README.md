@@ -28,4 +28,10 @@ pacman::p_load(
 
 ```
 
+# References 
+
+- [Berkeley Research Data Management](https://researchdata.berkeley.edu/)
+
+- [RStudio-Project-Management](https://github.com/dlab-berkeley/RStudio-Project-Management) by Evan Muzzall 
+
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
