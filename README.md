@@ -1,6 +1,4 @@
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/dlab-berkeley/efficient-reproducible-project-management-in-R/master)
-
 # Efficient and Reproducible Project Management in R
 
 by [Jae Yeon Kim](https://jaeyk.github.io/)
@@ -22,7 +20,7 @@ Basic familiarity with R required.
 
 ## Setup 
 
-Launch the bider or manually install the following three packages in R. 
+1. Install the following two packages in R. 
 
 ```r
 
@@ -33,10 +31,18 @@ pacman::p_load(
 
 ```
 
+2. Install [RStudio](https://rstudio.com/products/rstudio/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).  
+
+3. In the terminal, type the following command:
+
+```bash
+git clone https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R
+```
+
 # References 
 
 - [Berkeley Research Data Management](https://researchdata.berkeley.edu/)
 
-- [RStudio-Project-Management](https://github.com/dlab-berkeley/RStudio-Project-Management) by Evan Muzzall 
+- [RStudio-Project-Management](https://github.com/dlab-berkeley/RStudio-Project-Management) by Evan Muzzall
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
