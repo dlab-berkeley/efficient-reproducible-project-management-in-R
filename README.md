@@ -5,6 +5,8 @@
 
 by [Jae Yeon Kim](https://jaeyk.github.io/)
 
+File an [issue](https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R/issues) if you have problems, questions or suggestions.
+
 ## Overview 
 
 This workshop introduces tools and techniques to make a data science project efficient and reproducible in R. I recommend taking this workshop (1) if you have experienced difficulties organizing your project or (2) intend to share your code with other researchers (in a team or with the public). Science advances through the accumulation of reliable knowledge. A research project should be at the very least reproducible and, ideally, efficiently organized to make replication easy.
