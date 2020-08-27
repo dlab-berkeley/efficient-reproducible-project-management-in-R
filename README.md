@@ -33,7 +33,9 @@ pacman::p_load(
 
 2. Install [RStudio](https://rstudio.com/products/rstudio/download/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).  
 
-3. In the terminal, type the following command:
+3. [Sign up a GitHub account](https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account) (if you haven't) also don't forget to [set up your user name and email](https://kbroman.org/github_tutorial/pages/first_time.html).
+
+4. In the terminal, type the following command:
 
 ```bash
 git clone https://github.com/dlab-berkeley/efficient-reproducible-project-management-in-R
